@@ -1,0 +1,27 @@
+.section.contacts.contact-cards-container {
+  padding: 24px;
+  text-align: center;
+}
+
+.contact-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  background-color: rgba(59, 130, 246, .05);
+  /* grid-gap: 24px; */
+}
+
+.contact-cards > ul > li {
+  /* border: 1px solid #dadada; */
+  /* background-color: var(--background-color); */
+}
+
+.contact-cards .cards-card-body {
+  margin: 16px;
+}
+
+.contact-cards .cards-card-body p {
+  margin: 0;
+}

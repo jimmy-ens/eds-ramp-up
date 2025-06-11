@@ -1,0 +1,56 @@
+.office-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 24px;
+}
+
+.office-cards > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.office-cards .cards-card-body {
+  margin: 16px;
+}
+
+.office-cards .cards-card-image {
+  line-height: 0;
+}
+
+.office-cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.office-cards .cards-card-image picture > img {
+  height: 360px;
+}
+
+.office-cards .cards-card-image.two-images > p {
+  margin-top: 0;
+}
+
+.office-cards .cards-card-image.two-images p > picture:first-child > img  {
+  width: 57%;
+}
+
+.office-cards .cards-card-image.two-images p > picture:nth-child(2) > img  {
+  width: 42%;
+}
+
+.office-cards .cards-card-body > h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.office-cards .cards-card-body > p {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(72, 72, 72, var(--text-opacity, 0.8));
+  line-height: 1.25rem;
+
+}

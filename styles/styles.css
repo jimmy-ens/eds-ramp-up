@@ -255,3 +255,15 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+main .section.email {
+  text-align: center;
+}
+
+main .section.email p {
+  margin: 0;
+}
+
+main .section.email p:has(> a) {
+  margin: 15px auto;
+}
