@@ -288,13 +288,7 @@ function getMetadata(name, doc = document) {
  */
 function isMainBranch() {
   const host = window.location.hostname;
-  let branch = '';
-  const match = host.match(/^([a-z0-9-]+)--/);
-  if (match) {
-    [, branch] = match;
-  }
-  // Now you can use `branch` to conditionally hide menu items
-  return branch === 'main';
+  return host.startsWith('main--');
 }
 
 /**
