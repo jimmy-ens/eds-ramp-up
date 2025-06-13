@@ -18,6 +18,7 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --button-color: #ff8e2f;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -167,21 +168,23 @@ a:hover {
 
 /* buttons */
 a.button:any-link,
+.button,
 button {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
-  margin: 12px 0;
+  margin: 12px auto;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  padding: 10px 50px;
   font-family: var(--body-font-family);
   font-style: normal;
+  font-size: var(--body-font-size-s);
   font-weight: 500;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: var(--button-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
@@ -266,4 +269,10 @@ main .section.email p {
 
 main .section.email p:has(> a) {
   margin: 15px auto;
+}
+
+main .section.email p.button {
+  display: inline-flex;
+  gap: 10px;
+  padding: 15px 42px 10px;
 }
